@@ -1,0 +1,31 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+        : TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::FormCreate(TObject *Sender)
+{
+        Pole1 -> Picture -> LoadFromFile("img/nic.bmp");
+        Pole2 -> Picture -> LoadFromFile("img/nic.bmp");
+        Pole3 -> Picture -> LoadFromFile("img/nic.bmp");
+        Pole4 -> Picture -> LoadFromFile("img/nic.bmp");
+        Pole5 -> Picture -> LoadFromFile("img/nic.bmp");
+        Pole6 -> Picture -> LoadFromFile("img/nic.bmp");
+        Pole7 -> Picture -> LoadFromFile("img/nic.bmp");
+        Pole8 -> Picture -> LoadFromFile("img/nic.bmp");
+        Pole9 -> Picture -> LoadFromFile("img/nic.bmp");
+        Tura -> Picture -> LoadFromFile("img/osmall.bmp");
+}
+//---------------------------------------------------------------------------
